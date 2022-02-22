@@ -1,4 +1,15 @@
+Movemouse is a MacOS Application that moves the mouse based on <a href="https://gist.github.com/vorce/04e660526473beecdc3029cf7c5a761c">Vorce/Jerry </a> project.
+
+Don't forget to allow the app in settings security/accesilibity (each time you compile if you are in XCode)
+
+![Alt text](images/security.png?raw=true "Security")
+
+
 ## Welcome to GitHub Pages
+
+
+
+
 
 You can use the [editor on GitHub](https://github.com/alejandrocordon/MoveMouse/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
