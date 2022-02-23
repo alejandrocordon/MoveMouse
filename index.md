@@ -1,7 +1,14 @@
 ### Movemouse
 
-Movemouse is a MacOS Application that moves the mouse based on <a href="https://gist.github.com/vorce/04e660526473beecdc3029cf7c5a761c">Vorce/Jerry </a> project.
+Movemouse is a MacOS Application that moves the mouse based on <a href="https://gist.github.com/vorce/04e660526473beecdc3029cf7c5a761c">Vorce/Jerry </a> project. It uses CGEvent <a href="https://developer.apple.com/documentation/coregraphics/cgevent"> that defines an opaque type that represents a low-level hardware event.
+  
 
+  
+```
+  CGEvent(mouseEventSource: nil, mouseType: CGEventType.mouseMoved, mouseCursorPosition: point, mouseButton: CGMouseButton.left)?.post(tap: CGEventTapLocation.cghidEventTap)
+  
+```
+  
 
 ### Usage
 
