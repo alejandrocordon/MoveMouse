@@ -25,12 +25,10 @@ This following code is used to **move** the mouse from one point to another.
 
 It can be uset also to **click** in some points of the screen using the next function:
 
-  `
-  CGEvent(mouseEventSource: nil, 
+  `CGEvent(mouseEventSource: nil, 
           mouseType: CGEventType.leftMouseUp, 
           mouseCursorPosition: point, 
-          mouseButton: mouseButton)?.post(tap: CGEventTapLocation.cghidEventTap)
-  `
+          mouseButton: mouseButton)?.post(tap: CGEventTapLocation.cghidEventTap)`
 
 ```
  
