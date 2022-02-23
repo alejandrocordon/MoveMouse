@@ -2,4 +2,4 @@ Movemouse is a MacOS Application that moves the mouse based on <a href="https://
 
 Don't forget to allow the app in settings security/accesilibity (each time you compile if you are in XCode)
 
-![Alt text](images/security.png?raw=true "Security")
+![Alt text](security.png?raw=true "Security")
