@@ -1,17 +1,26 @@
-##Movemouse
+### Movemouse
 
 Movemouse is a MacOS Application that moves the mouse based on <a href="https://gist.github.com/vorce/04e660526473beecdc3029cf7c5a761c">Vorce/Jerry </a> project.
 
-Don't forget to allow the app in settings security/accesilibity (each time you compile if you are in XCode)
 
+### Usage
+
+Don't forget to allow the app in settings security/accesilibity (each time you compile if you are in XCode)
 
 
 ![Alt text](security.png?raw=true "Security")
 
 
+
+### Demo video
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://gi
+
+
 <p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kFVdB7A_LPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
+
 
 ### Markdown
 
@@ -35,11 +44,6 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/alejandrocordon/BTCSenseHat/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
