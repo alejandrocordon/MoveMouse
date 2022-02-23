@@ -1,1 +1,6 @@
 theme: jekyll-theme-minimal
+title: MoveMouse
+logo: /assets/logo.png
+description: MoveMouse A MacOS Application that moves the mouse
+show_downloads: true
+google_analytics:
