@@ -1,8 +1,8 @@
 ### Movemouse
 
-Movemouse is a MacOS Application that moves the mouse based on <a href="https://gist.github.com/vorce/04e660526473beecdc3029cf7c5a761c">Vorce/Jerry </a> project. It uses CGEvent <a href="https://developer.apple.com/documentation/coregraphics/cgevent"> that defines an opaque type that represents a low-level hardware event.
+Movemouse is a MacOS Application that moves the mouse based on <a href="https://gist.github.com/vorce/04e660526473beecdc3029cf7c5a761c">Vorce/Jerry </a> project. It uses <a href="https://developer.apple.com/documentation/coregraphics/cgevent">CGEvent</a> that defines an opaque type that represents a low-level hardware event.
   
-
+Example:
   
 ```
   CGEvent(mouseEventSource: nil, mouseType: CGEventType.mouseMoved, mouseCursorPosition: point, mouseButton: CGMouseButton.left)?.post(tap: CGEventTapLocation.cghidEventTap)
@@ -12,16 +12,15 @@ Movemouse is a MacOS Application that moves the mouse based on <a href="https://
 
 ### Usage
 
-Don't forget to allow the app in settings security/accesilibity (each time you compile if you are in XCode)
+Don't forget to allow the app in settings security/accesilibity (each time you compile if you are using it directly from XCode)
 
-
-![Alt text](security.png?raw=true "Security")
+![Allow MacOS security](security.png?raw=true "Security")
 
 
 
 ### Demo video
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://gi
+In the next **video** you can see a demo of how it works. 
 
 
 <p align="center">
