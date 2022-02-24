@@ -3,11 +3,12 @@ title: MoveMouse
 logo: /assets/images/logo.png
 description: MoveMouse A MacOS Application that moves the mouse
 show_downloads: true
-google_analytics:
-
+teaser: /assets/images/logo.png
 classes: wide
 
-header:
-  overlay_image: /assets/images/logo.png
-  overlay_filter: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 255, 255, 0.5))
 
+author:
+  name     : "Alejandro Cordón Ureña"
+  avatar   : "/assets/images/logo.jpg"
+  bio      : "My awesome biography constrained to a sentence or two goes here."
+  location : "Madrid, Spain"
