@@ -1,7 +1,14 @@
 theme: jekyll-theme-minimal
 title: MoveMouse
-logo: /assets/logo.png
+logo: /assets/images/logo.png
 description: MoveMouse A MacOS Application that moves the mouse
 show_downloads: true
 $content-width: 100%
 google_analytics:
+
+
+
+header:
+  overlay_image: /assets/images/logo.png
+  overlay_filter: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 255, 255, 0.5))
+
