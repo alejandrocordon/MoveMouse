@@ -3,10 +3,9 @@ title: MoveMouse
 logo: /assets/images/logo.png
 description: MoveMouse A MacOS Application that moves the mouse
 show_downloads: true
-$content-width: 100%
 google_analytics:
 
-
+classes: wide
 
 header:
   overlay_image: /assets/images/logo.png
