@@ -5,10 +5,23 @@ description: MoveMouse A MacOS Application that moves the mouse
 show_downloads: true
 teaser: /assets/images/logo.png
 classes: wide
-
+search: true
 
 author:
   name     : "Alejandro Cordón Ureña"
   avatar   : "/assets/images/logo.jpg"
   bio      : "My awesome biography constrained to a sentence or two goes here."
   location : "Madrid, Spain"
+
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mmistakes"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mmistakes"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/mmistakes"
