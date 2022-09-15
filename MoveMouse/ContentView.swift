@@ -44,10 +44,6 @@ struct ContentView: View {
                 
             Button("Move mouse") {
                 jerry.go = true
-                /*if (time.isEmpty) {
-                    time = "5"
-                }*/
-                
                 jerry.timeInt = Int(time)!
                 print("let's go !",jerry.timeInt)
                 self.buttonBackColor = .green

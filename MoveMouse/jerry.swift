@@ -42,7 +42,7 @@ func moveAroundAndLeftClick() {
         let pause = Int.random(in: jerry.timeInt*1_000_000..<(jerry.timeInt+1)*1_000_000)
         print("pause: ", pause, jerry.go)
         usleep(useconds_t(pause))
-        //mouseClick(point: destination, mouseButton: CGMouseButton.left)
+        mouseClick(point: destination, mouseButton: CGMouseButton.left)
         currentPoint = destination
         
     } while(jerry.go == true)
