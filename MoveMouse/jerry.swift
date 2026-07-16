@@ -1,15 +1,18 @@
 import Cocoa
 import Foundation
 
+// Maximum distance (in points) the cursor travels on each movement.
+// Short hops keep the machine active without the long cross-screen
+// crawl that made every move take up to a few seconds to complete.
+let maxMoveOffset: CGFloat = 100
+
 func moveAroundAndLeftClick(moves: Int) {
     let screenSize = NSScreen.main?.visibleFrame.size
     let currentLocation = NSEvent.mouseLocation
     var currentPoint = CGPoint(x: currentLocation.x, y: currentLocation.y)
 
     for _ in 0 ... moves {
-        let randomXPos = CGFloat.random(in: 0..<screenSize!.width)
-        let randomYPos = CGFloat.random(in: 0..<screenSize!.height)
-        let destination = CGPoint(x: randomXPos, y: randomYPos)
+        let destination = nearbyPoint(from: currentPoint, within: screenSize!)
         let easing = Float.random(in: 270..<680)
 
         humanizedMouseMove(from: currentPoint, to: destination, easing: easing)
@@ -29,11 +32,9 @@ func moveAroundAndLeftClick() {
     let currentLocation = NSEvent.mouseLocation
     var currentPoint = CGPoint(x: currentLocation.x, y: currentLocation.y)
 
-    
+
     repeat {
-        let randomXPos = CGFloat.random(in: 0..<screenSize!.width)
-        let randomYPos = CGFloat.random(in: 0..<screenSize!.height)
-        let destination = CGPoint(x: randomXPos, y: randomYPos)
+        let destination = nearbyPoint(from: currentPoint, within: screenSize!)
         let easing = Float.random(in: 270..<680)
 
         humanizedMouseMove(from: currentPoint, to: destination, easing: easing)
@@ -51,6 +52,16 @@ func moveAroundAndLeftClick() {
     print("Done. Moves performed: ", jerry.go)
 }
 
+
+// Picks a destination a short random hop away from the current point,
+// clamped to the visible screen so the cursor never leaves it.
+func nearbyPoint(from: CGPoint, within screenSize: CGSize) -> CGPoint {
+    let offsetX = CGFloat.random(in: -maxMoveOffset...maxMoveOffset)
+    let offsetY = CGFloat.random(in: -maxMoveOffset...maxMoveOffset)
+    let x = min(max(from.x + offsetX, 0), screenSize.width)
+    let y = min(max(from.y + offsetY, 0), screenSize.height)
+    return CGPoint(x: x, y: y)
+}
 
 func moveMouseTo(point: CGPoint) {
     CGEvent(mouseEventSource: nil, mouseType: CGEventType.mouseMoved, mouseCursorPosition: point, mouseButton: CGMouseButton.left)?.post(tap: CGEventTapLocation.cghidEventTap)
