@@ -2,9 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <!-- Sandbox disabled on purpose: posting synthetic mouse events with
+         CGEvent (cghidEventTap) requires Accessibility control, which the
+         App Sandbox forbids. This is a local automation utility, not a
+         Mac App Store app, so the sandbox is not needed. -->
     <key>com.apple.security.app-sandbox</key>
-    <true/>
-    <key>com.apple.security.files.user-selected.read-only</key>
-    <true/>
+    <false/>
 </dict>
 </plist>

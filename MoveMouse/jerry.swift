@@ -1,5 +1,20 @@
 import Cocoa
 import Foundation
+import ApplicationServices
+
+// Requests (and reports) whether the app is trusted to control the mouse.
+// Posting synthetic events needs Accessibility permission; on macOS 13
+// Ventura this is granted in System Settings > Privacy & Security >
+// Accessibility. When false, macOS shows the prompt so the user can grant
+// it — the change takes effect after the app is relaunched.
+@discardableResult
+func ensureAccessibilityPermission() -> Bool {
+    let promptKey = kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String
+    let options = [promptKey: true] as CFDictionary
+    let trusted = AXIsProcessTrustedWithOptions(options)
+    print("Accessibility trusted: ", trusted)
+    return trusted
+}
 
 // Maximum distance (in points) the cursor travels on each movement.
 // Short hops keep the machine active without the long cross-screen
