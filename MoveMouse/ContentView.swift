@@ -43,6 +43,9 @@ struct ContentView: View {
             
                 
             Button("Move mouse") {
+                // Make sure macOS trusts us to move the cursor; on Ventura
+                // this triggers the Accessibility permission prompt.
+                ensureAccessibilityPermission()
                 jerry.go = true
                 jerry.timeInt = Int(time)!
                 print("let's go !",jerry.timeInt)
